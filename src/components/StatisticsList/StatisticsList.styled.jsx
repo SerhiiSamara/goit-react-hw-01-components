@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.section`
   width: 500px;
   margin-left: auto;
@@ -28,7 +27,9 @@ export const StatsItem = styled.li`
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-	background-color: ${props => {return props.color}}
+  background-color: ${props => {
+    return props.color;
+  }};
 `;
 
 export const StatsLabel = styled.span`

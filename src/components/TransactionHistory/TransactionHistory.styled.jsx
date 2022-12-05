@@ -17,16 +17,16 @@ export const CellTable = styled.td`
   width: 300px;
   height: 30px;
   text-align: center;
-	background-color: ${props => {
-	return (props.idx % 2 === 0) ? '#c1c1c1' : '#ffffff'
-	}}
+  background-color: ${props => {
+    return props.idx % 2 === 0 ? '#c1c1c1' : '#ffffff';
+  }};
 `;
 
 export const FirstCellTable = styled.td`
   width: 300px;
   height: 30px;
   padding-left: 80px;
-	background-color: ${props => {
-	return (props.idx % 2 === 0) ? '#c1c1c1' : '#ffffff'
-	}}
+  background-color: ${props => {
+    return props.idx % 2 === 0 ? '#c1c1c1' : '#ffffff';
+  }};
 `;
