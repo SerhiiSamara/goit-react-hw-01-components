@@ -1,20 +1,13 @@
 import styled from 'styled-components';
 
-export const FriendsList = styled.ul`
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-`;
-
-export const FriendItem = styled.li`
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-  padding: 7px 20px;
-  border: solid 2px #c1c1c1;
-  border-radius: 5px;
-`;
+// export const FriendItem = styled.div`
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 7px;
+//   padding: 7px 20px;
+//   border: solid 2px #c1c1c1;
+//   border-radius: 5px;
+// `;
 
 export const FriendIcon = styled.div`
   width: 15px;

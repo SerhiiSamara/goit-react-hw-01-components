@@ -9,9 +9,7 @@ import {
   StatsItem,
 } from './Profile.styled';
 
-export const Profile = ({
-  user: { avatar, username, tag, location, stats },
-}) => {
+export const Profile = ({ avatar, username, tag, location, stats : { followers, views, likes } }) => {
   return (
     <Container>
       <Description>
@@ -23,15 +21,15 @@ export const Profile = ({
       <Stats className="stats">
         <StatsItem>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className="quantity">{followers}</span>
         </StatsItem>
         <StatsItem>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className="quantity">{views}</span>
         </StatsItem>
         <StatsItem>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className="quantity">{likes}</span>
         </StatsItem>
       </Stats>
     </Container>
@@ -39,15 +37,13 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  user: PropTypes.shape({
     username: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    stats: PropTypes.shape({
-      followers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    }).isRequired,
-  }).isRequired,
-};
+    // stats: PropTypes.shape({
+    //   followers: PropTypes.number.isRequired,
+    //   views: PropTypes.number.isRequired,
+    //   likes: PropTypes.number.isRequired,
+    // }).isRequired,
+  };
